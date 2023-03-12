@@ -164,22 +164,22 @@ header .navigation a:hover{
 }
 /* End of home section styles */
 /* Start of about section styles */
-.about-content{
+.about .content{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.about-content .col-left{
+.about .content .col-left{
     position: relative;
     width: 45%;
 }
-.about-content .col-right{
+.about .content .col-right{
     position: relative;
     width: 45%;
 }
-.about-content .img-card{
+.about .content .img-card{
     position: relative;
     width: 100%;
     min-height: 450px;
@@ -193,9 +193,86 @@ header .navigation a:hover{
     object-fit: cover;
     border-radius: 2px;
 }
-.content-title__about{
-    font-size: 30px;
+.about .content-title{
+    font-size: 26px;
     font-weight: 800;
     margin-bottom: 20px;
 }
 /* End of about section styles */
+/* Start of skills section styles*/
+.skills{
+    background: #000016;
+}
+.skills .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 20px;
+}
+.skills .col-left{
+    position: relative;
+    width: 45%;
+}
+.skills .col-left .content-title{
+    margin-bottom: 20px;
+}
+.skills .col-right{
+    position: relative;
+    width: 45%;
+}
+.skills .col-right .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.skills .col-right .bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .col-right .bar .info span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.skills .col-right .line{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #ccc;
+    border-radius: 2px;
+}
+.skills .line::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+.skills .html::before{
+    width: 100%;
+    background-color: #E45126;
+}
+.skills .css::before{
+    width: 100%;
+    background-color: #0c73b8;
+}
+.skills .js::before{
+    width: 90%;
+    background-color: #e3a324;
+}
+.skills .boots::before{
+    width: 85%;
+    background-color: #30dd6d;
+}
+.skills .scss::before{
+    width: 80%;
+    background-color: #6d7eb8;
+}
+.skills .jquery::before{
+    width: 80%;
+    background-color: #a12e;
+}
+/* End of skills section styles*/

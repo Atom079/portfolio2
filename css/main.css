@@ -276,3 +276,45 @@ header .navigation a:hover{
     background-color: #a12e;
 }
 /* End of skills section styles*/
+/* Start of services section styles */
+.services .content{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.title p{
+    width: 80%;
+}
+.services .content .card{
+    background: #fff;
+    width: 300px;
+    margin: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+.services .card .service-icon{
+    color: crimson;
+    font-size: 120px;
+    transition: transform .5s ease;
+}
+.services .card .service-icon:hover{
+    transform: translateY(-20px);
+}
+.services .card .info{
+    text-align: center;
+}
+.services .card .info h3{
+    color: crimson;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* End of services section styles */

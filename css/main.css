@@ -352,3 +352,119 @@ header .navigation a:hover{
     transform: scale(1.2);
 }
 /* End of services section styles */
+/* Start of contact section styles */
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.contact .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contact .row .card{
+    background: #fff;
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+}
+.contact .row .card .contact-icon{
+    color: crimson;
+    font-size: 60px;
+    text-align: center;
+    transition: transform .3s ease-in-out;
+}
+.contact .row .card:hover .contact-icon{
+    transform: translateY(-20px);
+}
+.contact .card .info h3{
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+}
+.contact .card .info span{
+    color: #666;
+    font-weight: 500;
+}
+.contact-form{
+    background-color: #fff;
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%)
+}
+.contact-form h3{
+    color: #111;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 5px;
+    resize: none;
+}
+.contact-form .input-box .send-btn{
+    color: #fff;
+    background: crimson;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+.contact-form .input-box .send-btn:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #111;
+}
+/* End of contact section styles */
+/* Start of footer styles */
+.footer{
+    background: #000016;
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+}
+.footer .footer-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer p{
+    margin-top: 10px;
+}
+/* End of footer styles */
+@media screen and (max-width: 1049px) {
+    
+}

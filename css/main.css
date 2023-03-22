@@ -75,7 +75,11 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 999;
-  
+    transition: all .4s ease-in;
+}
+header.sticky{
+    background: crimson;
+    padding: 10px 100px;
 }
 header .brand{
     color: #fff;
@@ -96,7 +100,7 @@ header .navigation a{
     transition: all .5s ease;
 }
 header .navigation a:hover{
-    color: crimson;
+    color: #000;
 }
 /* End of header and navbar section styles */
 /* Start of home section styles */
@@ -279,7 +283,7 @@ header .navigation a:hover{
 /* Start of services section styles */
 .services .content{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     margin-top: 20px;
@@ -466,5 +470,127 @@ header .navigation a:hover{
 }
 /* End of footer styles */
 @media screen and (max-width: 1049px) {
-    
+    header{
+        padding: 12px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+
+    header .navigation.active{
+        z-index: 888;
+        position: fixed;
+        background: #fff;
+        top: 0;
+        right: 0;
+        width: 380px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: .4s ease;
+        box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    }
+    header .navigation a{
+        color: #000;
+        font-size: 22px;
+        margin: 10px;
+        padding: 0 20px;
+        border-radius: 20px;
+    }
+    header .navigation a:hover{
+        background: crimson;
+        color: #fff;
+    }
+    header.sticky{
+        padding: 10px 20px;
+    }
+    .menu-btn{
+        position: absolute;
+        background: url("../images/menu.png") no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: all .4s ease;
+        
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url("../images/close.png") no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: all .3s ease-in-out;
+        filter: invert(1);
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main .content h2{
+        font-size: 25px;
+    }
+    .main .content h3{
+        font-size: 35px;
+    }
+    .section-title{
+        font-size: 36px;
+    }
+    .about .content{
+        flex-direction: column;
+    }
+    .about .content .column{
+        position: relative;
+        width: 100%;
+    }
+    .about .content .col-right{
+        margin-top: 40px;
+    }
+    .skills .content{
+        flex-direction: column;
+    }
+    .skills .content .column{
+        position: relative;
+        width: 100%;
+    }
+    .skills .content .col-right{
+        margin-top: 40px;
+    }
+    .contact-form{
+        padding: 35px 40px;
+    }
+}
+.scrollTop-btn{
+    z-index: 999;
+    position: fixed;
+    background: crimson;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    cursor: pointer;
+    opacity: 0;
+}
+.scrollTop-btn.active{
+    right: 20px;
+    opacity: 1;
+}
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    transition: all 1.4s ease;
+    opacity: 0;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
